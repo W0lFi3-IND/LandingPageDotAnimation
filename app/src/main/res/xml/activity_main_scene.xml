@@ -79,17 +79,9 @@
         android:id="@+id/e"
         motion:constraintSetStart="@+id/start"
         motion:constraintSetEnd="@+id/end1"
-        motion:autoTransition="animateToEnd">
-        <OnSwipe />
-        <KeyFrameSet >
-            <KeyTimeCycle
-                motion:motionTarget="@+id/imageView"
-                motion:framePosition="0"
-                motion:wavePeriod="1"
-                motion:waveShape="square"
-                android:alpha="0.5"
-                motion:waveOffset="0.5" />
-        </KeyFrameSet>
+        motion:autoTransition="none"
+        motion:duration="2000">
+        <OnClick motion:targetId="@id/button" />
     </Transition>
 
 
